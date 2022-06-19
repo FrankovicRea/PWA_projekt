@@ -1,0 +1,368 @@
+/*GLAVNO*/
+@font-face{
+    font-family: Montserrat-SemiBold;
+    src:url("../fonts/Montserrat-SemiBold.ttf");
+}
+
+html,body
+{
+    font-size:16px;
+    font-family: 'Arial', sans-serif;
+    color:#262626;
+    line-height:1.6;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main
+{
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    padding: 50px;
+    min-height:100px;
+    display: table;
+}
+
+h1, h2, h3{
+    font-size: 26px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+
+/*HEADER*/
+header
+{
+    width:100%;
+    margin: 0px;
+    background-color:#262626;
+    text-align: center;
+}
+
+header img
+{
+    margin: 10px 0px -20px 0px;
+    width: 20%;
+}
+
+/*FOOTER*/
+footer
+{
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    min-height:100px;
+    background:#262626;
+    color:white;
+    text-align: center;
+
+}
+
+#up{
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+  }
+
+footer i{
+    color: tomato;
+    font-size: 12px;
+}
+
+
+/*NAVIGACIJA*/
+nav
+{
+    background-color: #262626;
+    text-align: center;
+}
+
+nav ul
+{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+nav ul li
+{
+    display:inline-block;
+}
+
+nav a
+{
+    color:white;
+    font-size: 14px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    display:inline-block;
+    text-transform:lowercase;
+    text-decoration: none;
+    text-align: center;
+    padding:10px;
+    width: 120px;
+}
+
+
+nav a:hover{
+    background-color:tomato;
+}
+
+
+@media(max-width: 1125px){
+    nav li{
+        width: 100%; 
+        position: relative;
+    }
+    nav a{
+        display: block;
+        width: 100%;
+        
+    }  
+}
+
+
+
+
+/*MAIN STRANICA*/
+.row{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: tomato;
+}
+
+#news_item{
+    flex: 23%;
+    box-sizing: border-box;
+    max-width: 23%;
+    padding: 30px;
+    margin: 10px;
+}
+
+#news_item img{
+    margin: 0 auto;
+    width: 100%;
+}
+
+#news_item h3{
+    color:tomato;
+    font-size: 10px;
+    text-transform:uppercase;
+}
+
+#news_item a
+{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    text-decoration: none;
+    color:#262626;
+    font-size: 20px;
+}
+
+#news_item p{
+    color:gray;
+    font-size: 10px;
+    text-transform:uppercase;
+}
+
+
+@media(max-width: 1250px){
+    .row{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .main{
+        text-align: center;
+        
+    }
+
+    #news_item{
+        max-width: 80%;
+    }
+}
+
+/*POJEDINACNA VJEST*/
+#news_article{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+}
+
+#news_article img{
+    margin: 20px 0px 80px 0px;
+    width: 100%;
+}
+
+#news_article #slika{
+    margin: 20px 0px 80px 0px;
+    width: 100%;
+}
+
+#news_article h3{
+    color:tomato;
+    font-size: 14px;
+    text-transform:uppercase;
+}
+
+#news_article h2{
+    font-size: 20px;
+
+}
+
+#news_article h1{
+    font-size: 40px;
+    margin: -15px 0px -10px 0px;
+
+}
+
+
+#news_article p{
+    color:gray;
+    font-size: 10px;
+    text-transform:uppercase;
+}
+
+#news_article article{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+}
+
+/*ADMINISTRACIJA*/
+form{
+    padding: 30px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+button{
+    margin: 10px;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 16px;
+    background-color:tomato;
+    color:white;
+    border:none;
+    padding:10px 30px;
+    border-radius:5px;
+    width: 100%;
+    height: 50px;
+}
+
+button:hover{
+    background-color:rgb(158, 63, 46);
+}
+
+form p{
+    font-size: 14px;
+    color: gray;
+}
+
+form h1{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    font-size: 30px;
+    color: tomato;
+    margin-top: -20px;
+}
+
+form label{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+
+}
+
+form input, form textarea, form select{
+    border: solid 2px gray;
+    border-radius:5px;
+    width: 90%;
+    height: 25px;
+    padding: 10px;
+    margin: 10px 10px -10px 10px;
+}
+
+form select{
+    height: 45px;
+}
+
+form textarea{
+    height: 180px;
+}
+
+form option, form select, form input[type=file]{
+    font-family: 'Montserrat-SemiBold', sans-serif;
+    color: tomato;
+}
+
+form input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+}
+
+.forma h3{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.iznadGumba{
+    margin: 10px 0px -10px 15px;
+    color: tomato;
+}
+
+.poruka{
+    color: red;
+    font-style: italic;
+    margin-bottom: -20px;
+}
+
+
+.forma{
+    width: 400px;
+    border: solid 2px gray;
+    padding: 40px 80px;
+    border-radius: 10px;
+}
+
+.profil{
+    text-align: center;
+    width: 350px;
+    border: solid 3px gray;
+    padding: 40px 80px;
+    border-radius: 10px;
+    box-shadow: gray 15px 15px 1px;
+}
+
+.profil h2{
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.profil h3{
+    font-size: 16px;
+}
+
+.forma2{
+    width: 450px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.forma2 img{
+    margin: 30px 0px 0px 30px;
+    width: 60%;
+}
